@@ -1,4 +1,5 @@
 name: Example Test
+run-name: Testing a single test
 
 on:
   push:
