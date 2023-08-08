@@ -48,4 +48,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Smoke Test Results HTML File
-          path: target/extentReports/report.html
+          path: target/cucumber-report/report.html
