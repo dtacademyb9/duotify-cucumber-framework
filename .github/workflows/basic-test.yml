@@ -8,7 +8,7 @@ on:
 
 
 jobs:
-  setup-environment-and-run-test:
+  Run-A-Single-UI-Test:
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repository
@@ -43,9 +43,9 @@ jobs:
       - name: Run Smoke Tests
         run: mvn test
 
-#      - name: Upload Test Results
-#        if: always()
-#        uses: actions/upload-artifact@v3
-#        with:
-#          name: Smoke Test Results HTML File
-#          path: target/extentReports/report.html
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: Smoke Test Results HTML File
+          path: target/extentReports/report.html
